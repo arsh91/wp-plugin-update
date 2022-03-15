@@ -3,7 +3,7 @@
  * Plugin Name:       LC Admin
  * Plugin URI:        https://www.leadconnectorhq.com/
  * Description:       Users of the API can authenticate with genterated token-id and a location-id. Arsh Go Highlevel
- * Version:           1.7
+ * Version:           1.8
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+
@@ -12,14 +12,15 @@
  * Domain Path:       /languages
  */
 
-
+//set_site_transient('update_plugins', null);
 require_once( 'LCPluginUpdater.php' );
 new LCPluginUpdater( __FILE__, 'arsh91', "wp-plugin-update" );
 
 function auto_update_specific_plugins ( $update, $item ) {
+    //error_log(print_r($item, true));
     // Array of plugin slugs to always auto-update
     $plugins = array (
-        'lc-admin',
+        'lc-admin/lc-admin.php',
     );
     if ( in_array( $item->slug, $plugins ) ) {
          // Always update plugins in this array

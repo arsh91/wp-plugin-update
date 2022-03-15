@@ -3,7 +3,7 @@
  * Plugin Name:      LC Admin update
  * Plugin URI:        https://www.leadconnectorhq.com/
  * Description:       Users of the API can authenticate with genterated token-id and a location-id.
- * Version:           1.1.2
+ * Version:           1.4
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+

@@ -2,8 +2,8 @@
 /**
  * Plugin Name:       LC Admin
  * Plugin URI:        https://www.leadconnectorhq.com/
- * Description:       Users of the API can authenticate with genterated token-id and a location-id. Arsh Go Highlevel
- * Version:           1.8
+ * Description:       Users of the API can authenticate with genterated token-id and a location-id. Arsh Highlevel
+ * Version:           1.9
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+

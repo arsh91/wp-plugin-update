@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:      LC Admin update
+ * Plugin Name:       LC Admin
  * Plugin URI:        https://www.leadconnectorhq.com/
- * Description:       Users of the API can authenticate with genterated token-id and a location-id.
- * Version:           1.4
+ * Description:       Users of the API can authenticate with genterated token-id and a location-id. Arsh Sharma
+ * Version:           1.5
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+

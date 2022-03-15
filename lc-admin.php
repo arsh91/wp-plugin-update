@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:      LC Admin
+ * Plugin Name:      LC Admin update
  * @link              https://www.leadconnectorhq.com/
  * @since             1.0
  * @package           Leadconnector_admin

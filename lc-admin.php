@@ -3,7 +3,7 @@
  * Plugin Name:      LC Admin update
  * Plugin URI:        https://www.leadconnectorhq.com/
  * Description:       Users of the API can authenticate with genterated token-id and a location-id.
- * Version:           1.1
+ * Version:           1.1.2
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+
@@ -13,13 +13,10 @@
  */
 
 
-/*
-require_once( 'BFIGitHubPluginUploader.php' );
-if ( is_admin() ) {
-    new BFIGitHubPluginUpdater( __FILE__, 'simranjit-developer', "git-first" );
-}
-*/
+require_once( 'LCPluginUpdater.php' );
+new LCPluginUpdater( __FILE__, 'arsh91', "wp-plugin-update" );
 
+/*
 if( ! class_exists( 'Smashing_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
@@ -30,8 +27,9 @@ $updater->set_repository( 'wp-update-plugin' );
 /*
 	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
 */
+/*
 $updater->initialize();
-
+*/
 
  /* METHOD WILL MATCH THE BEARER TOKEN WITH AN API */
 function lc_admin_verify_token($token_id, $location_id)

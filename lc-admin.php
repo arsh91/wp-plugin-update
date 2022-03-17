@@ -3,7 +3,7 @@
  * Plugin Name:       LC Admin
  * Plugin URI:        https://www.leadconnectorhq.com/
  * Description:       Users of the API can authenticate with genterated token-id and a location-id. Version 1.10
- * Version:           1.10
+ * Version:           1.11
  * Author:            LeadConnector
  * Author URI:        https://www.leadconnectorhq.com/
  * License:           GPL-2.0+
@@ -13,8 +13,8 @@
  */
 
 //set_site_transient('update_plugins', null);
-require_once( 'LCPluginUpdater.php' );
-new LCPluginUpdater( __FILE__, 'arsh91', "wp-plugin-update" );
+//require_once( 'LCPluginUpdater.php' );
+//new LCPluginUpdater( __FILE__, 'arsh91', "wp-plugin-update" );
 
 function auto_update_specific_plugins ( $update, $item ) {
     //error_log(print_r($item, true));
@@ -33,20 +33,20 @@ function auto_update_specific_plugins ( $update, $item ) {
 add_filter( 'auto_update_plugin', 'auto_update_specific_plugins', 10, 2 );
 
 
-/*
+
 if( ! class_exists( 'Smashing_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
 
 $updater = new Smashing_Updater( __FILE__ );
-$updater->set_username( 'arshdeepHighlevel' );
-$updater->set_repository( 'wp-update-plugin' );
+$updater->set_username( 'arsh91' );
+$updater->set_repository( 'wp-plugin-update' );
 /*
 	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
 */
-/*
+
 $updater->initialize();
-*/
+
 
  /* METHOD WILL MATCH THE BEARER TOKEN WITH AN API */
 function lc_admin_verify_token($token_id, $location_id)
